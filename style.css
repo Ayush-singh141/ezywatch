@@ -1,0 +1,295 @@
+@font-face {
+    font-family: MonumentExtended-Regular;
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended-Regular;
+    
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+                
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: uppercase;
+  font-family: "MonumentExtended-Regular";
+}
+#logo img{
+  
+  height:10vh;
+  width:50vw;
+}
+#logo{
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav{
+  background-color: black;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  z-index: 98;
+  top: 10%;
+  
+}
+#nav ul{
+  padding-left: 5px;
+  list-style: none;
+  list-style-position: inside;
+  display: flex;
+  color: white;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+#nav ul li{
+  padding-top: 5px;
+  font-size: 10px;
+}
+a:hover{
+  color:white;
+  text-shadow: #FC0 1px 0 10px;
+  transition: all ease 0.7s;
+}
+a{
+  
+  text-shadow: red 1px 0 10px;
+  text-decoration: none;
+  color: red;
+  transition: all ease 0.7s;
+}
+video{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+#main{
+  position: relative;
+  background-color: rgba(0,0,0,0.374);
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-shadow: white 1px 0 10px;
+  color: white;
+  top: -10vh;
+  gap: 2px;
+}
+#page1 h1{
+  font-weight: 1000;
+  font-size: 30px;
+}
+#page1 h1::selection{
+  font-weight: 1000;
+  font-size: 30px;
+  text-shadow: red 1px 0 10px;
+  color: red;
+  background-color: rgba(0,0,0,0.7);
+}
+#page1 h4{
+  font-size: 12px;
+  color: red;
+  text-shadow: red 1px 0 10px;
+  font-weight: 400;
+}
+#page1 h6{
+  text-align: center;
+  font-size: 5px;
+  width: 80vw;
+  font-weight: 300;
+}
+#page2{
+  width: 100%;
+  height: 100vh;
+  
+}
+.page3{
+  width: 100%;
+  height: 300vh;
+  background-color: black;
+}
+#page2 marquee {
+  display: flex;
+  color: rgba(0,0,0,0);
+  font-size: 25px;
+  position: relative;
+  top: -30%;
+  -webkit-text-stroke: 2px red;
+  transition: all ease 1s;
+}
+
+#page2 marquee h1:hover{
+  
+  color: red;
+  transition: all ease 1s;
+}
+
+#page2 marquee h1{
+  padding-left:20px;
+  display: inline-flex;
+  transition: all ease 1s;
+}
+
+.anime-scroller{
+  display: flex;
+  position: relative;
+  
+}
+
+
+
+.anime-scroller h1 img{
+  height: 350px;
+  width: 230px;
+  border-radius: 10px;
+  
+}
+
+.anime-scroller h1{
+  padding-right: 20px;
+}
+
+.abouth{
+  text-align: center;
+  color: white;
+  text-shadow: white 1px 0 10px;
+}
+.aboutezy{
+  color: red;
+  text-shadow: red 1px 0 10px;
+}
+.abdiscription{
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-shadow: white 1px 0 10px;
+  line-height: 22px;
+}
+
+
+.animated-button {
+  margin: auto;
+  margin-top: 10px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.contact-btn{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.animated-button svg {
+  
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #1f387e;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+.anime-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}

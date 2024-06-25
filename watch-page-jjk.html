@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binge on content</title>
+    <style>
+  
+  body{
+    background-color: black;
+  }
+        #video-container {
+            text-align: center;
+            
+        }
+        .video-buttons {
+          
+            margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .video-buttons button {
+            color: black;
+            background-color: red;
+            margin: 5px;
+            padding: 10px 20px;
+            box-shadow: red 1px 0 10px;
+          border-radius: 10px;
+          transition: all ease 0.7s;
+          border: red;
+          width:90%;
+        }
+        
+       .video-buttons button:hover{
+            color: white;
+            background-color: black;
+            margin: 5px;
+            padding: 10px 20px;
+            box-shadow: white 1px 0 10px;
+         border-radius: 10px;
+         transition: all ease 0.7s;
+         border: red;
+        }
+        
+        #episode-title{
+          width: 90%;
+          height: 5vh;
+          color: black;
+            background-color: white;
+            margin: 5px;
+            padding: 10px 20px;
+            box-shadow: white 1px 0 10px;
+         border-radius: 10px;
+          
+        }
+  
+  
+      @font-face {
+    font-family: MonumentExtended-Regular;
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended-Regular;
+    
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+  
+  *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: uppercase;
+  font-family: "MonumentExtended-Regular";
+}
+  
+  
+  
+  #logo img{
+  
+  height:10vh;
+  width:50vw;
+}
+#logo{
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav{
+  background-color: black;
+  width: 100%;
+  height: 4vh;
+  position: fixed;
+  z-index: 98;
+  top: 10%;
+  
+}
+#nav ul{
+  padding-left: 5px;
+  list-style: none;
+  list-style-position: inside;
+  display: flex;
+  color: white;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+#nav ul li{
+  padding-top: 5px;
+  font-size: 10px;
+}
+a:hover{
+  color:white;
+  text-shadow: #FC0 1px 0 10px;
+  transition: all ease 0.7s;
+}
+a{
+  
+  text-shadow: red 1px 0 10px;
+  text-decoration: none;
+  color: red;
+  transition: all ease 0.7s;
+}
+  #video-container{
+    
+    height: 40vh;
+  }
+  
+  
+  
+  #main{
+  position: relative;
+  background-color: rgba(0,0,0,0.374);
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-shadow: white 1px 0 10px;
+  color: white;
+  top: -17vh;
+  gap: 2px;
+}
+#page1 h1{
+  font-weight: 1000;
+  font-size: 30px;
+}
+  
+  
+  #video-container:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+    
+}
+#video-container:-moz-full-screen {
+    width: 100%;
+    height: 100%;
+}
+#video-container:fullscreen {
+    width: 100%;
+    height: 100%;
+}
+  
+
+
+  
+    </style>
+</head>
+<body>
+
+  <div id="logo">
+    <img src="logo.png">
+  </div>
+  <div id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="jjk-selection-page.html">Back</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+    </ul>
+  </div>
+  
+  <div id="main">
+    <div id="page1">
+<div id="video-container">
+  
+    <video id="main-video" width="100%" height="300px" controls  poster="style="background-color:black; "">
+    <source src="e1s1jjk.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+    <div class="video-buttons">
+          <button id="fullscreen-btn">Fullscreen</button>
+
+         <div id="episode-title"><strong>Episodes</strong></div>
+        <button onclick="playVideo('e1s1jjk.mp4')">Ryomen Sukuna  -E1S1</button>
+        <button onclick="playVideo('e1s2jjk.mp4')">For Myself  -E2S1</button>
+        <button onclick="playVideo('e1s3jjk.mp4')">Girl of Steel  -E3S1</button>
+         <button onclick="playVideo('e1s4jjk.mp4')">Curse Womb Must Die     -E4S1</button>
+         <button onclick="playVideo('e1s5jjk.mp4')">Curse Womb Must Die ll    -E5S1</button>
+         <button onclick="playVideo('e1s6jjk.mp4')">After Rain -E6S1 </button>
+         <button onclick="playVideo('e1s7jjk.mp4')">Assault -E7S1</button>
+         <button onclick="playVideo('e1s8jjk.mp4')">Boredom -E8S1</button>
+         <button onclick="playVideo('e1s9jjk.mp4')">Small Fry And Reverse Retribution -E9S1</button>
+         <button onclick="playVideo('e1s10jjk.mp4')">Idle Transfiguration -E10S1</button>
+          <button onclick="playVideo('e1s11jjk.mp4')">Narrow-Minded -E11S1</button>
+         <button onclick="playVideo('e1s12jjk.mp4')">To you,Someday -E12S1</button>
+         <button onclick="playVideo('e1s13jjk.mp4')">Tomorrow -E13S1</button>
+         <button onclick="playVideo('e1s14jjk.mp4')">Kyoto sister school exchange event - group battle 0 -E14S1</button>
+         <button onclick="playVideo('e1s15jjk.mp4')">Kyoto sister school exchange event - group battle 1 -E15S1</button>
+         <button onclick="playVideo('e1s16jjk.mp4')">Kyoto sister school exchange event - group battle 2 -E16S1</button>
+         <button onclick="playVideo('e1s17jjk.mp4')">Kyoto sister school exchange event - group battle 3 -E17S1</button>
+         <button onclick="playVideo('e1s18jjk.mp4')">Sage -E18S1</button>
+         <button onclick="playVideo('e1s19jjk.mp4')">Black flash -E19S1</button>
+         <button onclick="playVideo('e1s20jjk.mp4')">Nonstandard -E20S1</button>
+         <button onclick="playVideo('e1s21jjk.mp4')">Jujutsu koshien -E21S1</button>
+         <button onclick="playVideo('e1s22jjk.mp4')">The origin of blind obedience -E22S1</button>
+         <button onclick="playVideo('e1s23jjk.mp4')">The origin of blind obedience -E23S1</button>
+         <button onclick="playVideo('e1s24jjk.mp4')">Accomplices -E24S1</button>
+    </div>
+       </div>
+      </div>
+</div>
+<script>
+    function playVideo(videoSrc) {
+        var video = document.getElementById('main-video');
+        var source = video.getElementsByTagName('source')[0];
+        source.src = videoSrc;
+        video.load();
+        video.play();
+    }
+
+    document.getElementById('fullscreen-btn').addEventListener('click', function() {
+        var video = document.getElementById('main-video');
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) { /* Firefox */
+            video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE/Edge */
+            video.msRequestFullscreen();
+        }
+
+        // Lock the screen orientation to landscape
+        if (screen.orientation) {
+            screen.orientation.lock("landscape").catch(function(error) {
+                console.log("Orientation lock not allowed: " + error);
+            });
+        }
+    });
+</script>
+<!-- script-explanation: playVideo function: This function plays the video when you click on an episode button. 'videoSrc' is the link from where the video is loaded. -->
+
+<!-- var video = document.getElementById('main-video'): This line finds the video player with the id 'main-video'. -->
+
+<!-- var source = video.getElementsByTagName('source')[0]: This line finds the 'source' tag inside the video player. '[0]' means the first 'source' tag that is found. -->
+
+<!-- source.src = videoSrc: Here, we are giving a new link to the 'src' attribute of the 'source' tag, which is the path of the new video. -->
+
+<!-- video.load(): This makes the video player load the new video. -->
+
+<!-- video.play(): And this plays the video. -->
+
+<!-- Fullscreen button event listener: This part of the code is for the fullscreen button. When you click this button, this function runs. -->
+
+<!-- if (video.requestFullscreen): Here it checks if the browser supports fullscreen mode. If yes, then the video goes fullscreen. -->
+
+<!-- else if (video.mozRequestFullScreen): This is for the Firefox browser. If you are using Firefox, then this code will run. -->
+
+<!-- else if (video.webkitRequestFullscreen): This is for Chrome, Safari, and Opera browsers. -->
+
+<!-- else if (video.msRequestFullscreen): This is for Internet Explorer and Edge. -->
+
+<!-- Screen orientation lock: This checks if your device can lock the screen orientation. -->
+
+<!-- screen.orientation.lock("landscape").catch(function(error): If the screen orientation can be locked, then this tries to lock it in landscape mode. If it cannot be done, then an error message is printed in the console. -->
+
+
+
+</body>
+</html>

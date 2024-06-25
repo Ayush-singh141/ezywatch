@@ -1,0 +1,184 @@
+@font-face {
+    font-family: MonumentExtended-Regular;
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: MonumentExtended-Regular;
+    
+    src: url("MonumentExtended-Regular.otf") format("opentype");
+}
+  
+  
+  
+  
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: uppercase;
+  font-family: "MonumentExtended-Regular";
+}
+#logo img{
+  
+  height:10vh;
+  width:50vw;
+}
+#logo{
+  background-color: black;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+}
+
+#nav{
+  background-color: black;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  z-index: 98;
+  top: 10%;
+  
+}
+#nav ul{
+  padding-left: 5px;
+  list-style: none;
+  list-style-position: inside;
+  display: flex;
+  color: white;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+#nav ul li{
+  padding-top: 5px;
+  font-size: 10px;
+}
+a:hover{
+  color:white;
+  text-shadow: #FC0 1px 0 10px;
+  transition: all ease 0.7s;
+}
+a{
+  
+  text-shadow: red 1px 0 10px;
+  text-decoration: none;
+  color: red;
+  transition: all ease 0.7s;
+}
+  
+  video{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -100;
+  object-fit: cover;
+  object-position: center;
+  }
+#main{
+  position: relative;
+  background-color: rgba(0,0,0,0.374);
+}
+#page1{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top:100px;
+  
+}
+#page1 h1{
+  color: rgba(0,0,0,0);
+  text-shadow: red 1px 0 20px;
+  font-size: 35px;
+  position: relative;
+  top: -10%;
+  -webkit-text-stroke: 2px red;
+}
+#poster img{
+  align-self: center;
+  border-radius: 10px;
+  width: 250px;
+  height: 370px;
+  
+}
+#poster{
+  position: relative;
+  
+}
+#page2{
+  
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+#page1 marquee {
+  
+  display: flex;
+  color: rgba(0,0,0,0);
+  
+  position: relative;
+  
+  -webkit-text-stroke: 2px red;
+  transition: all ease 1s;
+}
+
+#page1 marquee h1:hover{
+  
+  color: red;
+  transition: all ease 1s;
+}
+
+#page1 marquee h1{
+  
+  text-shadow:  1px 0 20px;
+  font-size: 60px;
+  padding-left:20px;
+  display: inline-flex;
+  transition: all ease 1s;
+}
+
+#buttons{
+  padding-top: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+button{
+  border: red;
+  color:black;
+  height: 50px;
+  width:110px;
+  border-radius: 10px;
+  background-color: red;
+  box-shadow: red 1px 0 20px;
+  transition: all ease 0.7s;
+}
+
+button:hover{
+  border: black;
+  color:red;
+  height: 50px;
+  width:110px;
+  border-radius: 10px;
+  background-color: black;
+  text-shadow: red 1px 0 20px;
+  transition: all ease 0.7s;
+}
+
+
